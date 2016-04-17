@@ -3,14 +3,14 @@ require_relative 'player'
 
 class Game 
 
-	attr_accessor :board, :player
+  attr_accessor :board, :player
 
-	def initialize
+  def initialize
     @board = Board.new
     @player = Player.new
     gameplay
-	end
-  
+  end
+
   def gameplay
     @player.choose_token
     @board.draw_grid
@@ -19,15 +19,15 @@ class Game
     # computer_choice
     @board.draw_grid
   end
-  
+
   def choose_position
     p "Where do you want to move?"
     position = gets.chomp
-    board.make_move(position)
+    board.make_move(position, @player)
   end
-  
+
 end
 
 # To run
- new_game = Game.new
+new_game = Game.new
 
