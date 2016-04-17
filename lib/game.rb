@@ -29,5 +29,5 @@ class Game
 end
 
 # To run
-new_game = Game.new
+#new_game = Game.new
 
