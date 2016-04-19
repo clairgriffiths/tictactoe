@@ -17,6 +17,12 @@ class Player
   def player_token 
     @player_token
   end
+  
+  def choose_location
+    p "Where do you want to move?"
+    @position = gets.chomp
+    # if not a valid choice e.g. f4 
+  end
 
 end
 

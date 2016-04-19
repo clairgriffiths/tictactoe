@@ -1,5 +1,7 @@
 # Tic-tac-toe
 
+To run, please navigate to the lib directory and type ruby game.rb
+
 Your task is to write a program to play
 [tic-tac-toe](http://en.wikipedia.org/wiki/Tic-tac-toe) in the terminal. When
 the program is invoked, it must let the user pick whether to play as `X` or `O`,
